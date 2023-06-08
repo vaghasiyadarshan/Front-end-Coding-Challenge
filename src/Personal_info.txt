@@ -1,0 +1,3 @@
+Name=Darshan Vashasiya ,
+Github="https://github.com/vaghasiyadarshan/Front-end-Coding-Challenge",
+developmentTime= 8H
