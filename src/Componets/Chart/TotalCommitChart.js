@@ -10,12 +10,7 @@ const TotalCommitChart = ({ fullName }) => {
     const fetchData = async () => {
       try {
         const commitActivityResponse = await axios.get(
-          `https://api.github.com/repos/${fullName}/stats/commit_activity`,
-          {
-            headers: {
-              Authorization: "Bearer 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",
-            },
-          }
+          `https://api.github.com/repos/${fullName}/stats/commit_activity`
         );
 
         setCommitActivity([commitActivityResponse?.data]);

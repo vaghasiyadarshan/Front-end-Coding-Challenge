@@ -10,12 +10,7 @@ const AdditionDeletionChart = ({ fullName }) => {
     const fetchData = async () => {
       try {
         const codeFrequencyResponse = await axios.get(
-          `https://api.github.com/repos/${fullName}/stats/code_frequency`,
-          {
-            headers: {
-              Authorization: "Bearer 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",
-            },
-          }
+          `https://api.github.com/repos/${fullName}/stats/code_frequency`
         );
         setCodeFrequency(codeFrequencyResponse?.data);
       } catch (error) {
