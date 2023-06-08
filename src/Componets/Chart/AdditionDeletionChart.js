@@ -13,7 +13,7 @@ const AdditionDeletionChart = ({ fullName }) => {
           `https://api.github.com/repos/${fullName}/stats/code_frequency`,
           {
             headers: {
-              Authorization: "Bearer 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",
+              Authorization: "Bearer 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",
             },
           }
         );
